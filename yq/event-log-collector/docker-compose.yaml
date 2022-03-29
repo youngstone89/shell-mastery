@@ -1,0 +1,24 @@
+version: '3.7'
+services:
+  event-log-collector:
+    image: registry.labs.nuance.com/mob-ps/xaas-logging/event-log-collector:0.1.2
+    ports:
+      - '8078:8078'
+      - '6060:6060'
+    environment:
+      - ELC_ENABLE_DEBUG_LOGGING=false
+      - ELC_CONFIG=configs/config.docker_compose.json
+    networks:
+      - event-log-collector
+    volumes:
+      - ./configs:/nuance/configs
+    depends_on:
+      - kafka
+      - rabbitmq
+      - zookeeper
+      - elasticsearch
+      - kibana
+      - redis
+networks:
+  event-log-collector:
+    driver: bridge
