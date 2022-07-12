@@ -9,3 +9,5 @@ zip -r ./event-log-collector-v0.2.4-without-cgo.zip event-log-collector-v0.2.4
 zip -r solid-golang-class_week1.zip solid-golang-class
 zip -x '*.git*' -r ~/Downloads/solid-golang-class_week1.zip solid-golang-class
 zip -x '*.git*' -r ~/Downloads/solid-golang-class_week2.zip solid-golang-class
+zip -x '*.git*' -r ~/Downloads/solid-golang-class_week5.zip solid-golang-class
+zip -x '*.git*' -r ~/Downloads/solid-golang-class_week6.zip solid-golang-class
