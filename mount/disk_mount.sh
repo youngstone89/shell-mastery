@@ -1,0 +1,1 @@
+sudo mount /dev/sdc1 /mnt/nfs/var/nfs_share_dir/datapacks/
